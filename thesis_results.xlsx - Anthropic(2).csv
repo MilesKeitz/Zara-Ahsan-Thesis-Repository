@@ -1,0 +1,27 @@
+speaker,filename,agency_score,diminishment_score,dominance_score,moral_frame,making_opponent_small,Result
+Andy Beshar,andy_beshear_final_debate.txt,0.5873,0.1037,0.0912,Authority/Dominance,TRUE,Winner
+Andy Beshar,andy_beshear_partisan_winning_speech.txt,0.5685,0.063,0.0342,Authority/Dominance,TRUE,Winner
+Andy Beshar,andy_beshear_tweets.txt,0.5386,0.1374,0.0548,Authority/Dominance,TRUE,Winner
+Andy Beshar,Fancy Farms.txt,0.5695,0.2048,0.0735,Authority/Dominance,TRUE,Winner
+Anthony Brown,Fox interview.txt,0.5682,0.086,0.0282,Authority/Dominance,TRUE,Loser
+Anthony Brown,Oct 7 guber debate.txt,0.5774,0.0406,0.0435,Authority/Dominance,FALSE,Loser
+Charlie Baker,MACDC's 2014 Convention.txt,0.5611,0.0061,0.0117,Authority/Dominance,FALSE,Winner
+Charlie Baker,Oct 21 Gubernatorial debate.txt,0.5631,0.0456,0.0281,Authority/Dominance,FALSE,Winner
+Charlie Baker,"Oct 23, 2014 Massachusetts Gubernatorial Debate.txt",0.5657,0.0218,0.0251,Authority/Dominance,FALSE,Winner
+Charlie Baker,The Berkshire Eagle.txt,0.6136,0,0,Authority/Dominance,FALSE,Winner
+Kris Kobach,"2018 Kansas Governor Debate - September 5, 2018.txt",0.5666,0.0453,0.0367,Authority/Dominance,FALSE,Loser
+Kris Kobach,"Final Kansas Governor Debate October 30, 2018.txt",0.5639,0.1127,0.0569,Harm/Victim,TRUE,Loser
+Larry Hogan,Fox interview.txt,0.5908,0.0425,0.043,Harm/Victim,FALSE,Winner
+Larry Hogan,Oct 7 guber debate.txt,0.576,0.0675,0.0607,Harm/Victim,TRUE,Winner
+Laura Kelly,"2018 Kansas Governor Debate - September 5, 2018.txt",0.5899,0.0309,0.0211,Authority/Dominance,FALSE,Winner
+Laura Kelly,"Final Kansas Governor Debate October 30, 2018.txt",0.5765,0.0851,0.0447,Authority/Dominance,TRUE,Winner
+Martha Coakley,MACDC's 2014 Convention.txt,0.5666,0,0.0133,Authority/Dominance,FALSE,Loser
+Martha Coakley,Oct 21 Gubernatorial debate.txt,0.5799,0.0611,0.0493,Authority/Dominance,TRUE,Loser
+Martha Coakley,"Oct 23, 2014 Massachusetts Gubernatorial Debate.txt",0.5676,0.0694,0.056,Authority/Dominance,TRUE,Loser
+Martha Coakley,The Berkshire Eagle.txt,0.6207,0,0,Authority/Dominance,FALSE,Loser
+Matt Bevin,Fancy Farms.txt,0.5507,0.1086,0.0627,Harm/Victim,TRUE,Loser
+Matt Bevin,matt_bevin_final_debate.txt,0.5694,0.0408,0.0605,Authority/Dominance,FALSE,Loser
+Matt Bevin,matt_bevin_partisan_winning_speech.txt,0.5661,0.0975,0.0298,Authority/Dominance,TRUE,Loser
+Matt Bevin,matt_bevin_tweets.txt,0.5226,0.0069,0.0149,Authority/Dominance,FALSE,Loser
+Phil Scott,Oct 6.txt,0.5803,0.0198,0.0129,Authority/Dominance,FALSE,Winner
+Sue Minter,Oct 6.txt,0.5723,0.0365,0.0209,Authority/Dominance,FALSE,Loser
