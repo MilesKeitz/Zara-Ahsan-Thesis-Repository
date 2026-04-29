@@ -1,0 +1,155 @@
+---
+title: "Multi-Layer-NLP-T-Test-Results"
+format: html
+---
+
+```{r}
+data <- read.csv("dominance_frame_results.csv")
+data
+```
+
+
+
+```{r}
+library(tidyverse)
+library(broom)
+library(car)
+```
+
+```{r}
+data$Result <- as.factor(data$Result)
+
+model <- glm(Result ~ (agency_score + diminishment_score + dominance_score + moral_frame)^2,
+             data = data,
+             family = binomial(link="logit"))
+
+summary(model)
+```
+
+```{r}
+library(coin)
+library(effectsize)
+```
+
+```{r}
+vars <- c("agency_score", "diminishment_score", "dominance_score")
+
+for (var in vars) {
+  test <- wilcox.test(data[[var]] ~ data$Result)
+  r <- rank_biserial(data[[var]], data$Result)
+  cat(var, "| W =", test$statistic, "| p =", round(test$p.value, 3), 
+      "| r =", round(r$r, 3), "\n")
+}
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+```{r}
+data2 <- read.csv("scored_speeches.xlsx - Scores_Standardized.csv")
+```
+
+
+```{r}
+t.test(data2$score ~ data2$result, data = data2)
+```
+```{r}
+data2$result <- as.factor(data2$result)
+
+model2 <- glm(result ~ ingroup + outgroup + moral + threat + unity,
+             data = data2,
+             family = binomial(link="logit"))
+
+summary(model2)
+```
+
+```{r}
+vars2 <- c("ingroup", "outgroup", "moral", "threat", "unity")
+
+for (var in vars2) {
+  test <- wilcox.test(data2[[var]] ~ data2$result)
+  r <- rank_biserial(data2[[var]], data2$result)
+  cat(var, "| W =", test$statistic, "| p =", round(test$p.value, 3), 
+      "| r =", round(r$r, 3), "\n")
+}
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+```{r}
+data3 <- read.csv("pity_party_scores.xlsx - Standardized.csv")
+```
+
+```{r}
+t.test(data3$pity ~ data3$result, data = data3)
+```
+
+```{r}
+t.test(data3$dignity ~ data3$result, data = data3)
+```
+
+```{r}
+data3$result <- as.factor(data3$result)
+
+model3 <- glm(result ~ dignity + pity,
+             data = data3,
+             family = binomial(link="logit"))
+
+summary(model3)
+```
+
+```{r}
+vars3 <- c("dignity", "pity")
+
+for (var in vars3) {
+  test <- wilcox.test(data3[[var]] ~ data3$result)
+  r <- rank_biserial(data3[[var]], data3$result)
+  cat(var, "| W =", test$statistic, "| p =", round(test$p.value, 3), 
+      "| r =", round(r$r, 3), "\n")
+}
+```
+
+
+
+
+
+
