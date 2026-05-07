@@ -67,7 +67,7 @@ for (var in vars) {
 
 
 ```{r}
-data2 <- read.csv("scored_speeches.xlsx - Scores_Standardized.csv")
+data2 <- read.csv("scored_speeches.csv")
 ```
 
 
@@ -116,7 +116,7 @@ for (var in vars2) {
 
 
 ```{r}
-data3 <- read.csv("pity_party_scores.xlsx - Standardized.csv")
+data3 <- read.csv("pity_party_scores.csv")
 ```
 
 ```{r}
