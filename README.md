@@ -1,5 +1,9 @@
 The repository contains Python scripts, R scripts, CSV files, and speech text files.
 
+The speeches folder contains the speeches from each candidate that were used in the following models.
+
+training_set.xlsx is an additional training set for the model used in dominance_frame.ipynb
+
 Each Python script is its own model for the respective hypothesis. The files cannot be fully run without an API key:
 - dominance_frame.ipynb
 - pity_party.ipynb
@@ -9,4 +13,6 @@ The CSV files are the results from each of the models with the relevant characte
 - dominance_frame_results.csv
 - pity_party_scores.csv
 - score_speeches.csv
+
+
 
